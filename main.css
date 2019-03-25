@@ -1,0 +1,26 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+div.main {
+    margin: 0px auto;
+}
+div.header {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+div.loginField {
+width: 25vw;
+display:block;
+position: relative;
+float: left;
+
+}
+div.forumdesk {
+    width: 75vw;
+    display:block;
+    position: relative;
+    float: left;
+  
+}
+
