@@ -1,4 +1,5 @@
 <?php
+session_start();
 ini_set('display_errors', '1');
 error_reporting(E_ALL);
     include('layout.php');
@@ -21,7 +22,6 @@ error_reporting(E_ALL);
    <div class="header"> <h1><a href="/"> Наилучший форум, создан на PHP и MySQL </a></h1> </div>
     <div class="loginField">
      <?php
-                session_start();
             if (isset($_SESSION['username'])){
                 welcomeMessage();
                 logout();

@@ -1,15 +1,17 @@
 <?php
+session_start();
 ini_set('display_errors', '1');
 error_reporting(E_ALL);
     include('layout.php');
     include('content.php');
+    print_r($_COOKIE);
     ?>
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <title>Лучший форум</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css">
     <script src="main.js"></script>
@@ -20,7 +22,7 @@ error_reporting(E_ALL);
    <div class="header"> <h1><a href="/"> Наилучший форум, создан на PHP и MySQL </a></h1> </div>
     <div class="loginField">
      <?php
-                session_start();
+                
             if (isset($_SESSION['username'])){
                 welcomeMessage();
                 logout();
